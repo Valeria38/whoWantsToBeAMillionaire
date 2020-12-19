@@ -1,10 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Game from 'features/Game';
+
 import 'normalize.css';
+import './styles.scss';
 
 /* eslint-disable react/jsx-filename-extension */
-const App = () => <div>App</div>;
+const App = () => <Game />;
 
 /* eslint-disable no-undef */
 ReactDOM.render(<App />, document.querySelector('#root'));

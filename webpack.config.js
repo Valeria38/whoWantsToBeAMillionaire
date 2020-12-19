@@ -9,6 +9,12 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      features: path.resolve(__dirname, 'src/features/'),
+      constants: path.resolve(__dirname, 'src/constants/'),
+      images: path.resolve(__dirname, 'src/images/'),
+      common: path.resolve(__dirname, 'src/features/common'),
+    },
   },
   module: {
     rules: [

@@ -1,0 +1,46 @@
+@import 'constants/colors.scss';
+@import 'constants/breakpoints.scss';
+
+.button {
+  width: 100%;
+  min-height: 48px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: $orange;
+  color: $white;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: $md) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $lg) {
+    width: 288px;
+  }
+
+  @media (min-width: $xl) {
+    width: 38%;
+  }
+
+  @media (min-width: $threexl) {
+    padding: 30px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $fourxl) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $fivexl) {
+    font-size: 56px;
+  }
+}

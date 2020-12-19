@@ -1,0 +1,103 @@
+@import 'constants/colors.scss';
+@import 'constants/breakpoints.scss';
+
+.game-start {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right bottom, $white 50%, $lightOrange 50%);
+
+  @media (min-width: $lg) {
+    flex-direction: row;
+  }
+}
+
+.game-start--wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 18px;
+  box-sizing: border-box;
+
+  @media (min-width: $lg) {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.game-start--left,
+.game-start--right {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  box-sizing: border-box;
+
+  @media (min-width: $lg) {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.game-start--left {
+  justify-content: center;
+  align-items: center;
+}
+
+.game-start--left--icon {
+  width: 75%;
+
+  @media (min-width: $sm) {
+    width: 50%;
+  }
+
+  @media (min-width: $lg) {
+    width: 60%;
+  }
+}
+
+.game-start--right {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $lg) {
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 80px;
+  }
+}
+
+.game-start--right--title {
+  margin-bottom: 64px;
+  margin-top: 20px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+
+  @media (min-width: $md) {
+    margin-top: 40px;
+    font-size: 44px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 56px;
+    text-align: left;
+  }
+
+  @media (min-width: $threexl) {
+    font-size: 90px;
+  }
+
+  @media (min-width: $fourxl) {
+    font-size: 120px;
+  }
+
+  @media (min-width: $fivexl) {
+    font-size: 140px;
+  }
+}
