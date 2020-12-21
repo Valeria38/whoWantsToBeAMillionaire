@@ -199,14 +199,15 @@ svg.field {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
   padding: 50px 0 30px;
   background: #f5f5f7; }
-  @media (min-width: 768px) and (max-width: 1025px) {
+  @media (min-width: 768px) {
     .score {
-      display: block;
       padding: 80px 0; } }
+  @media (min-height: 640px) {
+    .score {
+      justify-content: center; } }
   @media (min-width: 1440px) {
     .score {
       display: none; } }
