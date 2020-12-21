@@ -108,6 +108,7 @@
       font-size: 44px; } }
   @media (min-width: 1025px) {
     .game-start--right--title {
+      margin-top: 0;
       font-size: 56px;
       text-align: left; } }
   @media (min-width: 2560px) {
@@ -318,6 +319,10 @@ svg.field {
       display: flex;
       flex-direction: column;
       justify-content: center; } }
+
+.game--subtitle {
+  color: #d0d0d8;
+  font-size: 32px; }
 
 .game {
   height: 100vh; }
