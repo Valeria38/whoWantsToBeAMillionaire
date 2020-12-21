@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import fieldSizes from 'constants/fieldSizes';
+import fieldSizes from 'Constants/fieldSizes';
 
 import FieldSvg from 'images/field.svg';
 
@@ -24,6 +24,7 @@ const Field = ({
 
   return (
     <div
+      data-testid="field"
       className={classNames('field-item', {
         isInteractive,
         isCorrect,
@@ -34,6 +35,7 @@ const Field = ({
     >
       <div className="field-item--wrapper">
         <FieldSvg
+          data-testid="field-icon"
           className={classNames('field-item--icon', {
             isActive,
             isInteractive,
@@ -44,12 +46,15 @@ const Field = ({
           height={`${size.height}px`}
         />
         <div
-          className={classNames('field-item--content', {
+            data-testid="field-text-wrapper"
+            className={classNames('field-item--content', {
             isDisabled,
             isActive,
           })}
         >
-          {typeof modifyLabel === 'function' ? modifyLabel(children) : children}
+          <span data-testid="field-text">
+            {typeof modifyLabel === 'function' ? modifyLabel(children) : children}
+          </span>
         </div>
       </div>
     </div>

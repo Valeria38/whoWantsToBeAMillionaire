@@ -12,7 +12,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
       features: path.resolve(__dirname, 'src/features/'),
-      constants: path.resolve(__dirname, 'src/constants/'),
+      Constants: path.resolve(__dirname, 'src/Constants/'),
       images: path.resolve(__dirname, 'src/images/'),
       common: path.resolve(__dirname, 'src/features/common'),
       store: path.resolve(__dirname, 'src/store'),

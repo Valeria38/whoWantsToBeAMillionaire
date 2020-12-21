@@ -5,7 +5,7 @@ import ScoreListMobile from 'features/Game/Questions/components/ScoreListMobile'
 
 import './styles.scss';
 
-const MobileNavMenu = () => {
+const MobileNavMenu = ({ data }) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   const toggleMenu = () => setIsMenuOpened(!isMenuOpened);
@@ -16,10 +16,10 @@ const MobileNavMenu = () => {
         onClick={toggleMenu}
         className={classNames('menu-btn', { open: isMenuOpened })}
       >
-        <div className="menu-btn--burger"></div>
+        <div className="menu-btn--burger" data-testid="burger"></div>
       </div>
 
-      {isMenuOpened && <ScoreListMobile />}
+      {isMenuOpened && <ScoreListMobile data={data} />}
     </>
   );
 };

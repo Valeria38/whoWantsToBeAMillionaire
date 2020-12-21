@@ -21,7 +21,7 @@ const Questions = () => {
       <div className="questions--right">
         <ScoreList />
       </div>
-      <MobileNavMenu />
+      <MobileNavMenu data={data} />
     </div>
   ) : null;
 };

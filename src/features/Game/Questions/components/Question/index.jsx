@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import useBreakpoints from 'hooks/useBreakpoints';
 
-import fieldSizes from 'constants/fieldSizes';
+import fieldSizes from 'Constants/fieldSizes';
 
 import Field from 'features/Game/Questions/components/Field';
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import screenSizes from 'constants/screenSizes';
+import screenSizes from 'Constants/screenSizes';
 import useWindowSize from 'hooks/useWindowSize';
 
 const useBreakpoints = () => {
