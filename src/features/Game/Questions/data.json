@@ -1,14 +1,14 @@
 [
   { 
     "id": 1,
-    "question": "What is your cat name?",
+    "question": "Which of the below is used in JavaScript to insert special characters?",
     "answers": [
-      { "label": "Lena", "id": 1 },
-      { "label": "Mary", "id": 2 }, 
-      { "label": "John", "id": 3 },
-      { "label": "Mark", "id": 4 }
+      { "label": "&", "id": 1 },
+      { "label": "-", "id": 2 }, 
+      { "label": "\\", "id": 3 },
+      { "label": "%", "id": 4 }
     ],
-    "correctAnswer": "Mary",
+    "correctAnswer": "\\",
     "price": 500
   },
     { 
