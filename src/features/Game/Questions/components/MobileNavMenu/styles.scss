@@ -14,7 +14,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
-  @media (min-width: $lg) {
+  @media (min-width: $xl) {
     display: none;
   }
 }

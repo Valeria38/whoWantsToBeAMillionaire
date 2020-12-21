@@ -5,6 +5,5 @@ export const modifyScore = (score) => {
     result = score.toLocaleString();
   }
 
-  console.log('r', result);
   return `$${result}`;
 };
