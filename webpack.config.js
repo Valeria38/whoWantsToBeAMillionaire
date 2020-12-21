@@ -3,12 +3,13 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'main.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.json'],
     alias: {
       features: path.resolve(__dirname, 'src/features/'),
       constants: path.resolve(__dirname, 'src/constants/'),
@@ -73,12 +74,14 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html',
+      template: path.resolve(__dirname, 'src/index.html'),
+      favicon: path.resolve(__dirname, 'src/images/favicon.ico'),
     }),
     new MiniCssExtractPlugin(),
   ],
   devServer: {
     open: true,
+    // hot: true,
   },
   performance: { hints: false },
 };

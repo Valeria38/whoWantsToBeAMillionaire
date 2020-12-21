@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux';
 import Field from 'features/Game/Questions/components/Field';
 
 import data from 'features/Game/Questions/data.json';
-import { fieldSizes } from 'constants/fieldSizes';
+import fieldSizes from 'constants/fieldSizes';
 
-import { useBreakpoints } from 'hooks/useBreakpoints';
+import useBreakpoints from 'hooks/useBreakpoints';
 
 import { getCurrentId } from 'features/Game/selectors';
 
-import { modifyScore } from 'helpers/modifyScore';
+import modifyScore from 'helpers/modifyScore';
 
 import './styles.scss';
 
@@ -22,6 +22,7 @@ const ScoreListMobile = () => {
       {[...data].reverse().map(({ id, price }) => {
         return (
           <Field
+            key={id}
             isActive={currentId === id}
             isDisabled={currentId - 1 >= id}
             size={isMd ? fieldSizes.lg : fieldSizes.sm}

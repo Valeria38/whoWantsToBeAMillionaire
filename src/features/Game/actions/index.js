@@ -2,7 +2,7 @@ import { createAction } from 'redux-actions';
 
 export const showQuestionsPage = createAction(
   'SHOW_QUESTIONS',
-  (isShown) => isShown
+  (isShown) => isShown,
 );
 
 export const showResultPage = createAction('SHOW_RESULT', (isShown) => isShown);

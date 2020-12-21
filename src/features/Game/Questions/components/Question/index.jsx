@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import { useBreakpoints } from 'hooks/useBreakpoints';
+import useBreakpoints from 'hooks/useBreakpoints';
 
-import { fieldSizes } from 'constants/fieldSizes';
+import fieldSizes from 'constants/fieldSizes';
 
 import Field from 'features/Game/Questions/components/Field';
 
@@ -29,6 +29,7 @@ const Question = ({ question, answers, correctAnswer, onClick }) => {
       <div className="question--answers">
         {answers?.map((item) => (
           <Field
+            key={item.id}
             id={item.id}
             onClick={onClick}
             size={!isSm && !isMd ? fieldSizes.lg : fieldSizes.md}

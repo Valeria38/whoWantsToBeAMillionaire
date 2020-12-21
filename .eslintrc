@@ -1,3 +1,14 @@
 {
-    "extends": "airbnb"
-}s
+    "extends": ["airbnb", "eslint:recommended"],
+    "settings": {
+        "import/resolver": "webpack"
+    },
+    "rules": {
+        "react/react-in-jsx-scope": "warn",
+        "react/jsx-filename-extension": "warn"
+    },
+    "globals": {
+        "window": true,
+        "document": true
+    }
+}

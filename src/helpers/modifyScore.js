@@ -1,4 +1,4 @@
-export const modifyScore = (score) => {
+const modifyScore = (score) => {
   let result = `${score}`;
 
   if (result.length >= 4) {
@@ -7,3 +7,5 @@ export const modifyScore = (score) => {
 
   return `$${result}`;
 };
+
+export default modifyScore;

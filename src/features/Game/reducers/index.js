@@ -18,41 +18,33 @@ const initialState = {
   score: 0,
 };
 
-export const gameReducer = handleActions(
+const gameReducer = handleActions(
   {
-    [showQuestionsPage]: (state) => {
-      return {
-        ...state,
-        isGameStartShown: !state.isGameStartShown,
-        isQuestionsShown: !state.isQuestionsShown,
-      };
-    },
-    [showResultPage]: (state) => {
-      return {
-        ...state,
-        isQuestionsShown: !state.isQuestionsShown,
-        isGameResultShown: !state.isGameResultShown,
-      };
-    },
-    [showStartPage]: (state) => {
-      return {
-        ...state,
-        isGameResultShown: !state.isGameResultShown,
-        isGameStartShown: !state.isGameStartShown,
-      };
-    },
-    [setCurrentStep]: (state, { payload }) => {
-      return {
-        ...state,
-        currentId: payload,
-      };
-    },
-    [addScore]: (state, { payload }) => {
-      return {
-        ...state,
-        score: payload,
-      };
-    },
+    [showQuestionsPage]: (state) => ({
+      ...state,
+      isGameStartShown: !state.isGameStartShown,
+      isQuestionsShown: !state.isQuestionsShown,
+    }),
+    [showResultPage]: (state) => ({
+      ...state,
+      isQuestionsShown: !state.isQuestionsShown,
+      isGameResultShown: !state.isGameResultShown,
+    }),
+    [showStartPage]: (state) => ({
+      ...state,
+      isGameResultShown: !state.isGameResultShown,
+      isGameStartShown: !state.isGameStartShown,
+    }),
+    [setCurrentStep]: (state, { payload }) => ({
+      ...state,
+      currentId: payload,
+    }),
+    [addScore]: (state, { payload }) => ({
+      ...state,
+      score: payload,
+    }),
   },
-  initialState
+  initialState,
 );
+
+export default gameReducer;

@@ -4,22 +4,22 @@ const gameSelector = (state) => state.gameReducer;
 
 export const getIsGameStartShown = createSelector(
   gameSelector,
-  (state) => state.isGameStartShown
+  (state) => state.isGameStartShown,
 );
 
 export const getIsQuestionsShown = createSelector(
   gameSelector,
-  (state) => state.isQuestionsShown
+  (state) => state.isQuestionsShown,
 );
 
 export const getIsResultShown = createSelector(
   gameSelector,
-  (state) => state.isGameResultShown
+  (state) => state.isGameResultShown,
 );
 
 export const getCurrentId = createSelector(
   gameSelector,
-  (state) => state.currentId
+  (state) => state.currentId,
 );
 
 export const getScore = createSelector(gameSelector, (state) => state.score);

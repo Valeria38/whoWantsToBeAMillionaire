@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import { fieldSizes } from 'constants/fieldSizes';
+import fieldSizes from 'constants/fieldSizes';
 
 import FieldSvg from 'images/field.svg';
 

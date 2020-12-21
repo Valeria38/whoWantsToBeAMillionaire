@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import { screenSizes } from 'constants/screenSizes';
-import { useWindowSize } from 'hooks/useWindowSize';
+import screenSizes from 'constants/screenSizes';
+import useWindowSize from 'hooks/useWindowSize';
 
-export const useBreakpoints = () => {
+const useBreakpoints = () => {
   const { width } = useWindowSize();
   const [windowType, setWindowType] = useState({
     isSm: undefined,
@@ -21,3 +21,5 @@ export const useBreakpoints = () => {
 
   return windowType;
 };
+
+export default useBreakpoints;
