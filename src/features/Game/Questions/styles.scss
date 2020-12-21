@@ -1,0 +1,21 @@
+@import 'constants/colors.scss';
+@import 'constants/breakpoints';
+
+.questions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: $lightGray;
+}
+.questions--right {
+  width: 35%;
+  display: none;
+  background: $white;
+
+  @media (min-width: $lg) {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

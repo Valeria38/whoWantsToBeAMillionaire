@@ -1,0 +1,23 @@
+import { useState, useEffect } from 'react';
+
+import { screenSizes } from 'constants/screenSizes';
+import { useWindowSize } from 'hooks/useWindowSize';
+
+export const useBreakpoints = () => {
+  const { width } = useWindowSize();
+  const [windowType, setWindowType] = useState({
+    isSm: undefined,
+    isMd: undefined,
+    isLg: undefined,
+  });
+
+  useEffect(() => {
+    setWindowType({
+      isSm: width < screenSizes.sm,
+      isMd: width < screenSizes.md && width >= screenSizes.sm,
+      isLg: width >= screenSizes.md,
+    });
+  }, [width]);
+
+  return windowType;
+};

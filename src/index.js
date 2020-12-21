@@ -1,12 +1,17 @@
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
 import Game from 'features/Game';
+
+import { store } from 'store';
 
 import 'normalize.css';
 import './styles.scss';
 
-/* eslint-disable react/jsx-filename-extension */
-const App = () => <Game />;
+const App = () => (
+  <Provider store={store}>
+    <Game />
+  </Provider>
+);
 
-/* eslint-disable no-undef */
 ReactDOM.render(<App />, document.querySelector('#root'));
