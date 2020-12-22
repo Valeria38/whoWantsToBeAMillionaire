@@ -36,6 +36,7 @@ const ResultPage = () => {
       infoJSX={headerJSX}
       onClick={handleClick}
       buttonText="Try again"
+      withBg={false}
     />
   ) : null;
 };
