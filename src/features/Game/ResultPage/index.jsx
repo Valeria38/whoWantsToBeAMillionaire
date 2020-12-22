@@ -19,7 +19,8 @@ const ResultPage = () => {
     <div>
       <div className="game--subtitle">Total score:</div>
       <div className="game-start--right--title">
-        {modifyScore(score)} earned
+        {modifyScore(score)}
+        earned
       </div>
     </div>
   );

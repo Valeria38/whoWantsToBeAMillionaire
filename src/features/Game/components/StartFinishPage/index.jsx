@@ -1,4 +1,5 @@
 import Button from 'common/Button';
+import PropTypes from 'prop-types';
 
 import Super from 'images/super.svg';
 
@@ -17,5 +18,11 @@ const StartFinishPage = ({ infoJSX, onClick, buttonText }) => (
     </div>
   </div>
 );
+
+StartFinishPage.propTypes = {
+  infoJSX: PropTypes.element.isRequired,
+  onClick: PropTypes.func.isRequired,
+  buttonText: PropTypes.string.isRequired,
+};
 
 export default StartFinishPage;

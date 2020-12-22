@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom';
 import { render, fireEvent } from '@testing-library/react';
 
 import StartFinishPage from './index';
@@ -23,11 +22,6 @@ describe('StartFinishPage component', () => {
     );
     return { getByTestId, getAllByTestId, props };
   };
-
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<StartFinishPage />, div);
-  });
 
   it('renders button text', () => {
     const buttonText = 'Try again';

@@ -17,7 +17,9 @@ const GameStart = () => {
 
   const headerJSX = (
     <div className="game-start--right--title">
-      Who wants to be <br /> a millionaire?
+      Who wants to be
+      <br />
+      a millionaire?
     </div>
   );
 

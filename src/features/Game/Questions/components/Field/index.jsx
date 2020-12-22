@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import fieldSizes from 'Constants/fieldSizes';
 
@@ -59,6 +60,33 @@ const Field = ({
       </div>
     </div>
   );
+};
+
+Field.propTypes = {
+  id: PropTypes.number.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  isDisabled: PropTypes.bool,
+  isActive: PropTypes.bool,
+  size: PropTypes.shape({
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+  }),
+  onClick: PropTypes.func,
+  isInteractive: PropTypes.bool,
+  isCorrect: PropTypes.bool,
+  isWrong: PropTypes.bool,
+  modifyLabel: PropTypes.func,
+};
+
+Field.defaultProps = {
+  isDisabled: false,
+  isActive: false,
+  size: fieldSizes.sm,
+  onClick: undefined,
+  isInteractive: false,
+  isCorrect: false,
+  isWrong: false,
+  modifyLabel: undefined,
 };
 
 export default Field;

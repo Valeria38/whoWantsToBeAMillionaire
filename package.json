@@ -54,6 +54,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -77,6 +78,7 @@
       "^common(.*)$": "<rootDir>/src/features/common$1",
       "^hooks(.*)$": "<rootDir>/src/hooks$1",
       "^helpers(.*)$": "<rootDir>/src/helpers$1",
+      "^customPropTypes(.*)$": "<rootDir>/src/customPropTypes$1",
       "^images(.*)$": "<rootDir>/src/images$1",
       "^store(.*)$": "<rootDir>/src/store$1",
       "^Constants(.*)$": "<rootDir>/src/Constants$1",

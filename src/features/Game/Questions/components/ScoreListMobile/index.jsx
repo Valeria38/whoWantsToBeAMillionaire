@@ -23,6 +23,7 @@ const ScoreListMobile = () => {
       {[...data].reverse().map(({ id, price }) => (
         <Field
           key={id}
+          id={id}
           isActive={currentId === id}
           isDisabled={currentId - 1 >= id}
           size={isMd ? fieldSizes.lg : fieldSizes.sm}

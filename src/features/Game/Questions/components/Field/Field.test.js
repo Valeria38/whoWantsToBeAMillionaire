@@ -34,7 +34,7 @@ describe('StartFinishPage component', () => {
 
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Field />, div);
+    ReactDOM.render(<Field id={1}>$8,000</Field>, div);
   });
 
   it('renders field text', () => {

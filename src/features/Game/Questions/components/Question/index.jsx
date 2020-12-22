@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import useBreakpoints from 'hooks/useBreakpoints';
 
 import fieldSizes from 'Constants/fieldSizes';
+
+import answersPropType from 'customPropTypes/answersPropType';
 
 import Field from 'features/Game/Questions/components/Field';
 
@@ -44,6 +47,17 @@ const Question = ({ question, answers, correctAnswer, onClick }) => {
       </div>
     </div>
   );
+};
+
+Question.propTypes = {
+  question: PropTypes.string.isRequired,
+  answers: answersPropType.isRequired,
+  correctAnswer: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+};
+
+Question.defaultProps = {
+  onClick: undefined,
 };
 
 export default Question;
