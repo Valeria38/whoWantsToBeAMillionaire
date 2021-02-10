@@ -1,0 +1,111 @@
+@import 'Constants/colors.scss';
+@import 'Constants/breakpoints.scss';
+
+.field-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: $gray;
+  }
+}
+
+.field-item.isInteractive {
+  &:hover {
+    &:before {
+      background: $orange;
+    }
+  }
+}
+
+.field-item.isCorrect {
+  &:hover {
+    &:before {
+      background: $green;
+    }
+  }
+}
+
+.field-item.isWrong {
+  &:hover {
+    &:before {
+      background: $red;
+    }
+  }
+}
+
+.field-item.isInteractive:hover .field-item--icon {
+  path {
+    stroke: $orange;
+  }
+}
+
+.field-item.isCorrect .field-item--icon,
+.field-item.isCorrect:hover .field-item--icon {
+  path {
+    fill: $lightGreen;
+    stroke: $green;
+  }
+}
+
+.field-item.isWrong .field-item--icon {
+  path {
+    fill: $pink;
+    stroke: $red;
+  }
+}
+
+.field-item.isWrong {
+  &:before {
+    background: $red;
+  }
+}
+
+.field-item--wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.field-item--icon {
+  path {
+    stroke: $gray;
+    fill: $white;
+  }
+}
+
+svg.field {
+  max-width: 390px;
+  max-height: 72px;
+}
+
+.field-item--icon.isActive {
+  path {
+    stroke: $orange;
+  }
+}
+
+.field-item--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $black;
+}
+
+.field-item--content.isDisabled {
+  color: $gray;
+}
+
+.field-item--content.isActive {
+  color: $orange;
+}

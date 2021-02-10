@@ -1,0 +1,29 @@
+@import 'Constants/colors';
+@import 'Constants/breakpoints.scss';
+
+.score {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 50px 0 30px;
+  background: $lightGray;
+
+  @media (min-width: $md){
+    padding: 80px 0;
+  }
+
+  @media (min-height: $gallaxys5){
+    justify-content: center;
+  }
+
+  @media (min-width: $xl) {
+    display: none;
+  }
+}

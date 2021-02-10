@@ -1,0 +1,146 @@
+[
+  { 
+    "id": 1,
+    "question": "Which of the below is used in JavaScript to insert special characters?",
+    "answers": [
+      { "label": "&", "id": 1 },
+      { "label": "-", "id": 2 }, 
+      { "label": "\\", "id": 3 },
+      { "label": "%", "id": 4 }
+    ],
+    "correctAnswer": "\\",
+    "price": 500
+  },
+    { 
+      "id": 2,
+      "question": "What is JavaScript?",
+      "answers": [
+        { "label": "Java", "id": 1 },
+        { "label": "Animal", "id": 2 },
+        { "label": "Programming language", "id": 3 },
+        { "label": "Pain", "id": 4 }
+        ],
+      "correctAnswer": "Programming language",
+      "price": 1000
+    },
+    { 
+      "id": 3,
+      "question": "Wich array method doesn't exist?",
+      "answers": [
+        { "label": "some", "id": 1 }, 
+        { "label": "find", "id": 2 }, 
+        { "label": "map", "id": 3 }, 
+        { "label": "split", "id": 4 }
+      ],
+      "correctAnswer": "split",
+      "price": 2000
+    },
+    { 
+      "id": 4,
+      "question": "What is JSX?",
+      "answers": [
+        { "label": "African vegetable", "id": 1 }, 
+        { "label": "JS syntax extension", "id": 2 }, 
+        { "label": "Loch Ness monster's anchestor", "id": 3 }, 
+        { "label":"Clothing brand", "id": 4 }
+      ],
+      "correctAnswer": "JS syntax extension",
+      "price": 4000
+    },
+    { 
+      "id": 5,
+      "question": "What is React?",
+      "answers": [
+        { "label": "JS framework", "id": 1 }, 
+        { "label": "JS library", "id": 2 }, 
+        { "label": "Blue star", "id": 3 }, 
+        { "label": "Java", "id": 4 }
+      ],
+      "correctAnswer": "JS library",
+      "price": 8000
+    },
+    { 
+      "id": 6,
+      "question": "JavaScript written under which of the following tag?",
+      "answers": [
+        { "label": "<JavaScript></JavaScript>", "id": 1 },
+        { "label": "<script></script>", "id": 2 }, 
+        { "label": "<code></code>", "id": 3 }, 
+        { "label": "<head></head>", "id": 4 }
+      ],
+      "correctAnswer": "<script></script>",
+      "price": 16000
+    },
+    { 
+      "id": 7,
+      "question": "Variable in JavaScript declared with which of the following keyword?",
+      "answers": [
+        { "label": "new", "id": 1 }, 
+        { "label": "int", "id": 2 }, 
+        { "label": "string", "id": 3 }, 
+        { "label": "var", "id": 4 }
+      ],
+      "correctAnswer": "var",
+      "price": 32000
+    },
+    { 
+      "id": 8,
+      "question": "Who is the creator of JavaScript?",
+      "answers": [
+        { "label": "Brendan Eich", "id": 1 }, 
+        { "label": "Joanne Rowling", "id": 2 }, 
+        { "label": "Barack Obama", "id": 3 }, 
+        { "label": "some kind of pervert", "id": 4 }
+      ],
+      "correctAnswer": "Brendan Eich",
+      "price": 64000
+    },
+    { 
+      "id": 9,
+      "question": "Which of the followings are primitive data types in JavaScript?",
+      "answers": [
+        { "label":"String", "id": 1 }, 
+        { "label": "Number", "id": 2 }, 
+        { "label":"Bollean", "id": 3 }, 
+        { "label": "All of the above", "id": 4 }
+      ],
+      "correctAnswer": "All of the above",
+      "price": 125000
+    },
+    { 
+      "id": 10,
+      "question": "Which of the following is NOT a JavaScript object?",
+      "answers": [
+        { "label": "var obj = {};", "id": 1 },
+        { "label": "var obj = { name: \"Steve\"};", "id": 2 }, 
+        { "label": "var obj = { name = \"Steve\"};", "id": 3 }, 
+        { "label": "var obj = new Object();", "id": 4 }
+      ],
+      "correctAnswer": "var obj = { name = \"Steve\"};",
+      "price": 250000
+    },
+    { 
+      "id": 11,
+      "question": "Which of the following object represent parameters of current function inside any function?",
+      "answers": [
+        { "label": "Global", "id": 1 }, 
+        { "label": "arguments", "id": 2 }, 
+        { "label": "this", "id": 3 }, 
+        { "label": "Object", "id": 4 }
+      ],
+      "correctAnswer": "arguments",
+      "price": 500000
+    },
+    { 
+      "id": 12,
+      "question": "A function can be assigned to a variable in JavaScript.",
+      "answers": [
+        { "label": "True", "id": 1 }, 
+        { "label": "False", "id": 2 }, 
+        { "label": "Some time", "id": 3 }, 
+        { "label": "None of the above", "id": 4 }
+      ],
+      "correctAnswer": "True",
+      "price": 1000000
+    }
+]

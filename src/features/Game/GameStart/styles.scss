@@ -1,0 +1,34 @@
+@import 'Constants/colors.scss';
+@import 'Constants/breakpoints.scss';
+
+.game-start--right--title {
+  margin-bottom: 64px;
+  margin-top: 20px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+
+  @media (min-width: $md) {
+    margin-top: 40px;
+    font-size: 44px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 0;
+    font-size: 56px;
+    text-align: left;
+  }
+
+  @media (min-width: $threexl) {
+    font-size: 90px;
+  }
+
+  @media (min-width: $fourxl) {
+    font-size: 120px;
+  }
+
+  @media (min-width: $fivexl) {
+    font-size: 140px;
+  }
+}
